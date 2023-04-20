@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx,md,mdx}"],
   theme: {
     extend: {
       container: {
@@ -12,12 +12,5 @@ module.exports = {
       },
     },
   },
-  // if you want to include tailwind classes in mdx 
-  safelist: [
-    'mb-4',
-    'p-4',
-    'border',
-    'border-blue-500'
-  ],
   plugins: [require("@tailwindcss/typography")],
 };
